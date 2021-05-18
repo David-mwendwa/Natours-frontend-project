@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-mwendwa/Natours-project-frontend.git"
+  },
+  "author": "techDave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-mwendwa/Natours-project-frontend/issues"
+  },
+  "homepage": "https://github.com/David-mwendwa/Natours-project-frontend#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
