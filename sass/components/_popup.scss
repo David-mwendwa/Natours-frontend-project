@@ -10,6 +10,20 @@
   visibility: hidden;
   transition: all .3s;
 
+  &__content {
+    @include absCenter;
+
+    width: 75%;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.25);
+    transition: all .5s .2s;
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;
@@ -26,22 +40,17 @@
       text-decoration: none;
       display: inline-block;
       transition: all .2s;
+      line-height: 1;
     }
 
-    :hover {
+    &:hover {
       color: $color-primary;
     }
-  }
 
-  &__content {
-    @include absCenter;
-    
-    width: 75%;
-    background-color: $color-white;
-    box-shadow: 0 2rem 4rem rgba($color-black, .2);
-    border-radius: 3px;
-    display: table;
-    overflow: hidden;
+    &:target &__content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 
   &__left {
